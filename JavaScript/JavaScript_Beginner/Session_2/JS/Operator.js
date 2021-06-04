@@ -33,7 +33,26 @@ unary.innerHTML += "<p> Number('7') : " + typeof(Number(uNum)) + "</p>";
 let unaryMinus = document.getElementById("unary_minus_result");
 
 let uMinusNum = "12"; //string type
-
 unaryMinus.innerHTML += "<p> -'12' : " + -uMinusNum + "</p>";
 unaryMinus.innerHTML += "<p> 20 + -'12' : " + (20 + -uMinusNum) + "</p>";
 unaryMinus.innerHTML += "<p> '12'의 변숫값의 부호는 바뀌지 않는다 : " + uMinusNum + "</p>";
+
+
+//후치 ++ 연산자
+let postOperator = document.getElementById("post_operator_result");
+
+let one = 1;
+postOperator.innerHTML += "<p> one 초기값 : "+ one +"</P>";
+
+let poNum = one++ + 3;
+postOperator.innerHTML += "<p> one++ + 3 : "+ poNum +" (연산이 끝난 뒤 one 값이 증가)</P>";
+postOperator.innerHTML += "<p> one 변경값 : "+ one +"</P>";
+
+
+//!연산자
+let exclamation = document.getElementById("exclamation_result");
+
+let value = true;
+exclamation.innerHTML += "<p>value : "+value+"</p>";
+exclamation.innerHTML += "<p>!value : "+!value+"</p>";
+exclamation.innerHTML += "<p>!!'A' : "+(!!"A")+" ('A'를 true로 변환했을 때, !'A'는 false, !!'A'는 완전하게 true로 변환(ES3에서 자주사용, 지금은 사용X))</p>";
