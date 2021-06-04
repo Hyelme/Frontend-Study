@@ -2,5 +2,5 @@
 - 김영보, 인프런 강의  
 
 ### 📚학습 목록
-[✏ 1강 기본 문법] (https://www.notion.so/2021-05-31-1-13dae3b6f74c4ea1b31dcee42596a1eb)
+[✏ 1강 기본 문법] (https://www.notion.so/2021-05-31-1-13dae3b6f74c4ea1b31dcee42596a1eb)  
 [✏ 2강 연산자] (https://www.notion.so/2021-05-31-2-0f99decadf154a98bd1a329fb5182afb)
