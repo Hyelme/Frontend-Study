@@ -61,9 +61,42 @@ exclamation.innerHTML += "<p>!!'A' : "+(!!"A")+" ('A'를 true로 변환했을 �
 //동등, 부등, 일치, 불일치 연산자
 let equals = document.getElementById("equals_result");
 
-equals.innerHTML += "<p> 동등 연산자 </p>";
+equals.innerHTML += "<p> 동등 연산자 (==) </p>";
 equals.innerHTML += "<p>1. 1 == '1' => " + (1 == "1") + "</p>";
 
 let value1;
-equals.innerHTML += "<p>1. value1 == undefined(value1은 선언만 한 상태) => " + (value1 == undefined) + "</p>";
-equals.innerHTML += "<p>1. value1 == null(value1은 선언만 한 상태) => " + (value1 == null) + " (‼ undefined와 null은 '값' 일뿐 타입이 다른 것이므로 true 출력 ‼)</p>";
+equals.innerHTML += "<p>2. value1 == undefined(value1은 선언만 한 상태) => " + (value1 == undefined) + "</p>";
+equals.innerHTML += "<p>3. value1 == null(value1은 선언만 한 상태) => " + (value1 == null) + " (‼ undefined와 null은 '값' 일뿐 타입이 다른 것이므로 true 출력 ‼)</p>";
+
+equals.innerHTML += "<br><p> 부등 연산자 (!=) </p>";
+equals.innerHTML += "<p>1. a != b => " + ('a' != 'b')  +"</p>";
+equals.innerHTML += "<p>2. !(a == b) => " + (!('a' == 'b'))  +"</p>";
+
+equals.innerHTML += "<br><p> 일치 연산자 (===) </p>";
+equals.innerHTML += "<p>1. 1 === 1 => " + (1 === 1)  +"</p>";
+equals.innerHTML += "<p>2. 1 === '1' => " + (1 === '1')  +"</p>";
+
+equals.innerHTML += "<p>3. value1 == null(value1은 선언만 한 상태) => " + (value1 == null)  +"</p>";
+equals.innerHTML += "<p>4. value1 === null(value1은 선언만 한 상태) => " + (value1 === null)  +"</p>";
+
+
+//논리 연산자
+let logic = document.getElementById("logic_result");
+
+let value2, zero = 0, two = 2;
+
+logic.innerHTML += "<p> || 연산자 </p>";
+logic.innerHTML += "<p>1. value2(선언만) || zero(=0) || two(=2) => " + (value2 || zero || two)  +"</p>";
+logic.innerHTML += "<p><h5>value2 변수값이 undefined 이므로 false</h5></p>";
+logic.innerHTML += "<p><h5>zero 변수값이 0이므로 false (0을 제외한 1, 2, 3은 true, 0은 false)</h5></p>";
+logic.innerHTML += "<p><h5>two 변수값이 2이므로 true가 되며 two 변수값을 반환한다.</h5></p>";
+logic.innerHTML += "<p><h5>즉, true가 아닌 true가 되는 변수값을 반환한다. 2가 true이므로 전체 비교는 true이다.</h5></p>";
+
+logic.innerHTML += "<br>";
+
+one = 1;
+logic.innerHTML += "<p>2. one === 1 || two2 === 2 => " + (one === 1 || two2 === 2) +"</p>";
+logic.innerHTML += "<p><h5>왼쪽 결과가 true이므로 true 반환</h5></p>";
+logic.innerHTML += "<p><h5>왼쪽 비교 결과가 true이면 오른쪽은 비교할 필요가 없다.</h5></p>";
+logic.innerHTML += "<p><h5>오른쪽을 비교하면 two2라는 변수는 존재하지 않으므로 에러가 발생</h5></p>";
+
