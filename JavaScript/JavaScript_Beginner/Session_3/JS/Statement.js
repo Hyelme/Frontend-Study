@@ -16,3 +16,4 @@ let debuggerBox = document.getElementById("debugger_result");
 let sports = "스포츠";
 debugger;
 debuggerBox.innerHTML += "<p>" + sports + "</p>";
+
