@@ -101,10 +101,42 @@ try {
 //throw문
 let throwBox = document.getElementById("throw_result");
 
+throwBox.innerHTML += "<p> 1. throw 기본 문법 </p>";
 try {
     throw "예외를 발생시킴";
     var sports2 = "스포츠";
 } catch(error) {
     throwBox.innerHTML += "<p>" + error +"</p>" +
                           "<p>" + sports2 + "</p>";
+}
+
+throwBox.innerHTML += "<br> <p> 2. 오브젝트 형태(throw{name : 메세지})</p>";
+
+try {
+    throw {
+        msg : "예외를 발생시킴",
+        bigo : "임의의 이름 사용"
+    };
+}catch(error) {
+    throwBox.innerHTML += "<p> error.msg = " + error.msg + "</p>";
+    throwBox.innerHTML += "<p> error.bigo = " + error.bigo + "</p>";
+}
+
+throwBox.innerHTML += "<br> <p> 3. new 연산자(new Error('text')) 문법</p>";
+
+try {
+    throw new Error("new Error로 예외를 발생시킴");
+}catch(error) {
+    throwBox.innerHTML += "<p> error.message = " + error.message + "</p>";
+}
+
+//strict모드
+let strictBox = document.getElementById("strict_result");
+
+"use strict";
+try {
+    var undefined = 5;
+    strictBox.innerHTML += "<p>" + strict + "(이게 나오면 안되는디....)</p>";
+} catch(error) {
+    strictBox.innerHTML += "<p>" + error.message + "</p>";
 }
