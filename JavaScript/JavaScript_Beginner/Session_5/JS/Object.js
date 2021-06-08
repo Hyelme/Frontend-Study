@@ -10,3 +10,16 @@ propBox.innerHTML += "<pre> var book = { <br>" +
                      "      promotion: function(){} <br>" + 
                      "  } <br>" + 
                      "} </pre>";
+
+
+//for ~ in문
+let forInBox = document.getElementById("forIn_result");
+
+var sports = {
+    soccer : "축구",
+    baseball : "야구"
+}
+
+for(var item in sports) {
+    forInBox.innerHTML += "<p> key : " + item + ", value : " + sports[item] + "</p>";
+}
