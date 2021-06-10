@@ -24,7 +24,7 @@ newNumBox.innerHTML += "<p> twoObj.valueOf() => " + (twoObj.valueOf()) + "</p>";
 let primiBox = document.getElementById("primitive_result");
 
 primiBox.innerHTML += "<p>인스턴스의 프리미티브 값</p>" + 
-                    + "<p> let obj = new Number(123) 에 정수를 더해도 값이 출력된다.</p>";
+                      "<p> let obj = new Number(123) 에 정수를 더해도 값이 출력된다.</p>";
 
 obj = new Number(123);
 
