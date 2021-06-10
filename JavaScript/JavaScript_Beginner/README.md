@@ -8,3 +8,4 @@
 [✏ 4강 함수](https://www.notion.so/2021-06-08-4-6d3da5e66b894bad9a5738b4c42d7f22)  
 [✏ 5강 오브젝트](https://www.notion.so/2021-06-08-5-284e2873e3e743e0b969cff5ee50f322)  
 [✏ 6강 빌트인](https://www.notion.so/2021-06-09-6-c8dc265fc3594ee49a4fb4dab0d5eae9)  
+[✏ 7강 Number 오브젝트](https://www.notion.so/2021-06-10-7-Number-d1f7b1da062d4de0a903a1b9856fd08a) 
