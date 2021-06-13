@@ -28,3 +28,20 @@ indexOfBox.innerHTML += "<p>1. 없는 문자를 검색할 경우 ==> " + value.i
                         "<p>1. 없는 문자를 검색할 경우 ==> " + value.lastIndexOf(14) + "</p>" +
                         "<p>2. 두 번째 파라미터가 0보다 작을 경우 ==> " + value.lastIndexOf(3, -2) + "</p>" +
                         "<p>3. 두 번째 파라미터가 length보다 큰 경우 ==> " + value.lastIndexOf(2, 8) + "</p>";
+
+//concat()
+let concatBox = document.getElementById("concat_result");
+
+result = "sports";
+let obj = new String(123);
+concatBox.innerHTML += "<p> let result = 'sports'; 일 때</p>" +
+                       "<p> result.concat('축구', 11) ==> " + result.concat("축구", 11) + "</p>" +
+                       "<br>" +
+                       "<p> let obj = new String(123); 일 때</p>" +
+                       "<p> obj.concat('ABC') ==> " + obj.concat("ABC") + "</p>";
+
+//toLowerCase(), toUpperCase()
+let toCaseBox = document.getElementById("toCase_result");
+
+toCaseBox.innerHTML += "<p>1. 'ABCDE' ==> " + "ABCDE".toLowerCase() + "</p>" +
+                       "<p>2. 'abcde' ==> " + "abcde".toUpperCase() + "</p>";
