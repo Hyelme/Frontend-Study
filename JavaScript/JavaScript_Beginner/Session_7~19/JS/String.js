@@ -45,3 +45,20 @@ let toCaseBox = document.getElementById("toCase_result");
 
 toCaseBox.innerHTML += "<p>1. 'ABCDE' ==> " + "ABCDE".toLowerCase() + "</p>" +
                        "<p>2. 'abcde' ==> " + "abcde".toUpperCase() + "</p>";
+
+//substring()
+let substringBox = document.getElementById("substring_result");
+value = "01234567";
+
+substringBox.innerHTML += "<p> let value = '01234567'; 일 때</p>" +
+                          "value.substring(2, 5) ==> " + value.substring(2,5) + "</p>";
+
+//substr()
+let substrBox = document.getElementById("substr_result");
+substrBox.innerHTML += "<p> let value = '01234567'; 일 때</p>" +
+                       "<p>value.substr(0, 3) ==> " + value.substr(0, 3) + "</p>";
+
+//slice()
+let sliceBox = document.getElementById("slice_result");
+sliceBox.innerHTML += "<p> let value = '01234567'; 일 때</p>" +
+                      "<p>value.slice(1, 4) ==> " + value.slice(1, 4) + "</p>";
