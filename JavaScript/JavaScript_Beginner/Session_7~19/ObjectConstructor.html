@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object 구조</title>
+</head>
+<body>
+    <script>
+        window.onload = function() {
+            "use struct"
+
+            debugger;
+
+            var obj = Object;
+            /*
+            1. obj에 Object 빌트인 오브젝트가 할당된다.
+            2. 개발자도구 - Sources - Local에서 obj를 펼친다.
+                - 빌트인 Object 오브젝트에 포함된 프로퍼티를 확인할 수 있다.
+                - assign : f assign() 처럼 표시된 것이 함수이다.
+                - length : 1, name : "Object" 처럼 표시된 것이 프로퍼티 이다.
+            */
+
+            debugger;
+            
+            var proto = Object.prototype;
+            /*
+            3. prototype을 펼친다.
+            4. constructor가 있으며 f Object()이다.
+                - 이것이 시맨틱 그대로 생성자이다.
+
+            5. new Object()를 하거나 var obj = {};를 실행하면 생성자가 호출되어 Object 인스턴스를 만든다.
+            6. ES5에서는 constructor를 변경할 수 없지만 ES6에서는 변경 가능하다.
+            */
+
+            debugger;
+        }
+    </script>
+</body>
+</html>

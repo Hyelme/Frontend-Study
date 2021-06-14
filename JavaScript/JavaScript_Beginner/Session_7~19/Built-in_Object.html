@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>빌트인 Object의 특징</title>
+</head>
+<body>
+    <script>
+        //Object.prototype
+        window.onload = function() {
+            "use strict"
+            
+            debugger;
+
+            var numberInstance = new Number(123);
+            /*
+            1. 개발자도구 - Sources - Local의 numberInstance를 펼치면 __proto__가 표시된다.
+            2. [[PrimitiveValue]] : 123이 있으며 num Number(123)에서 123이 프리미티브 값으로 설정된 것이다.
+            */
+
+            var numberProto = numberInstance.__proto__;
+            /*
+            3. __proto__를 펼치면 6개의 메소드가 표시되는데, 이것은 Number.prototype에 연결된 메소드이다.
+            4. new 연산자로 Number 인스턴스를 생성하면 Number.prototype에 연결된 메소드를 __proto__에 연결하기 때문에 표시된 것이다.
+            */
+
+            var objectProto = numberProto.__proto__;
+            /*
+            5. __proto__ : Object를 펼치면 Object.prototype에 연결된 메소드가 첨부되어 있다.
+            6. Number 인스턴스를 생성할 때, 기본적으로 Object.prototype에 연결된 메소드가 첨부된다.
+            7. Object의 함수는 첨부되지 않는다.
+            */
+        }
+    </script>
+</body>
+</html>
