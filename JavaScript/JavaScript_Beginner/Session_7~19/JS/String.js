@@ -62,3 +62,81 @@ substrBox.innerHTML += "<p> let value = '01234567'; 일 때</p>" +
 let sliceBox = document.getElementById("slice_result");
 sliceBox.innerHTML += "<p> let value = '01234567'; 일 때</p>" +
                       "<p>value.slice(1, 4) ==> " + value.slice(1, 4) + "</p>";
+
+//match()
+let matchBox = document.getElementById("match_result");
+value = "Sports drama";
+
+matchBox.innerHTML += "<p>let value = 'Sports'; 일 때</p>" +
+                      "<p>1. 정규 표현식 이용 : value.match(/a/) ==> " + value.match(/s/) + "</p>" +
+                      "<p>2. 문자열 이용      : value.match('spo') ==> " + value.match("spo") + "</p>";
+
+//replace()
+let replaceBox = document.getElementById("replace_result");
+value = "abcabc";
+
+replaceBox.innerHTML += "<p>lat value = 'abcabc'; 일 때</p>" +
+                        "<p>1. 문자열 이용          : value.replace('a', '바꿈') ==> " + value.replace("a", "바꿈") + "</p>" +
+                        "<p>2. 정규 표현식 이용     : value.replace(/a/, '바꿈') ==> " + value.replace(/a/, "바꿈") + "</p>" +
+                        "<p>3. 정규 표현식(global)  : value.replace(/a/g, '바꿈') ==> " + value.replace(/a/g, "바꿈") + "</p>";
+
+function change() {
+    return "함수";
+}
+
+replaceBox.innerHTML += "<p>4. 사용자 지정 함수 이용 : value.replace(/a/, change) ==> " + value.replace(/a/, change()) + "</p>";
+
+//search()
+let searchBox = document.getElementById("search_result");
+value = "cbacba";
+
+searchBox.innerHTML += "<p>let value = 'cbacba'; 일 때</p>" +
+                       "<p>1. 정규 표현식 이용        : value.search(/a/) ==> " + value.search(/a/) + "</p>" +
+                       "<p>2. 문자열 이용, 없는 구분자 : value.search('K') ==> " + value.search("K") + "</p>";
+
+//split()
+let splitBox = document.getElementById("split_result");
+
+splitBox.innerHTML += "<p>1. 12_34_56을 '_'로 구분    : ["+ "12_34_56".split("_") +"]</p>" +
+                      "<br>";
+
+value = "123";
+splitBox.innerHTML += "<p> let value = '123'일 때</p>" +
+                      "<p>2. 구분자가 빈 문자열('')    : [" + value.split("") + "]</p>" +
+                      "<p>3. 구분자가 없을 때()        : [" + value.split() + "]</p>" +
+                      "<br>";
+
+value = "12_34_56_78";
+splitBox.innerHTML += "<p>let value = '12_34_56_78'; 일 때</p>" + 
+                      "<p>4. 두 번째 파라미터 사용-3   : [" + value.split("_", 3) + "]</p>" +
+                      "<br>";
+
+value = "123";
+splitBox.innerHTML += "<p> let value = '123'일 때</p>" +
+                      "<p>5. 분리자가 문자열에 없을 때 : [" + value.split("A") + "]</p>";
+
+//charCodeAt()
+let charCodeAtBox = document.getElementById("charCodeAt_result");
+value = "1Aa가";
+charCodeAtBox.innerHTML += "<p>let value = '1Aa가'; 일 때</p>";
+
+for(let k = 0; k<value.length; k++) {
+    charCodeAtBox.innerHTML += "<p> value.charCodeAt("+k+") ==> " + value.charCodeAt(k) + "</p>";
+}
+
+charCodeAtBox.innerHTML += "<p>2. 파라미터 수가 value length보다 큰 경우 ==> " + value.charCodeAt(12) + "</p>";
+
+//fromCharCode()
+let fromCharCodeBox = document.getElementById("fromCharCode_result");
+
+fromCharCodeBox.innerHTML += "<p> String.fromCharCode(49, 65, 97, 44032) ==> " + String.fromCharCode(49, 65, 97, 44032) + "</p>";
+
+//localeCompare()
+let localeCompareBox = document.getElementById("localeCompare_result");
+
+value = "나";
+
+localeCompareBox.innerHTML += "<p> let value = '나'; 일 때</p>" +
+                              "<p>1. value.localeCompare('가') ==> " + value.localeCompare("가") + "</p>" +
+                              "<p>1. value.localeCompare('나') ==> " + value.localeCompare("나") + "</p>" +
+                              "<p>1. value.localeCompare('다') ==> " + value.localeCompare("다") + "</p>"
