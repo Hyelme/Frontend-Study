@@ -12,3 +12,4 @@
 [✏ 8강 String 오브젝트](https://www.notion.so/2021-06-10-8-String-278de6445f3149de8619d197a61cf156)  
 [✏ 9강 Object 오브젝트](https://www.notion.so/2021-06-14-9-Object-abd5d387bda549e8a77be1dc1848f5a4)  
 [✏ 10강 Function 오브젝트](https://www.notion.so/2021-06-15-10-Function-8ff79869b196490197b50b8adc6ea750)  
+[✏ 11강 Global 오브젝트](https://www.notion.so/2021-06-20-11-Global-aaa5cfd61ea44c3faede2bdb58f3a302)
