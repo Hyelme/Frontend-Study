@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eval() 실행 환경</title>
+</head>
+<body>
+    <script>
+        window.onload = function() {
+            //"use strict" //use strict 환경에서 eval()함수를 사용하기에는 제약이 많다.
+            
+            debugger;
+            /*
+            1. add(200)으로 함수를 호출하면 이 값에 100을 더해 반환한다.
+            2. 반환된 값을 result에 할당한다.
+            3. console.log()로 result  변수값을 출력한다.
+            */
+
+            var result;
+            eval(
+            "function add(param){" +
+                "return param + 100;" +
+            "};" +
+            "result = add(200);"
+            );
+            console.log(result);
+        }
+    </script>
+</body>
+</html>
