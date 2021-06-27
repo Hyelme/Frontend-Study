@@ -16,3 +16,4 @@
 [✏ 12강 Array 오브젝트(ES3기준)](https://www.notion.so/2021-06-23-12-Array-ES3-827a3ccf19cf4511911fb13b7a4090b5)  
 [✏ 13강 Array 오브젝트(ES5기준)](https://www.notion.so/2021-06-27-13-Array-ES5-82303a52f18a4666b51ae56d1c46d289)  
 [✏ 14강 Boolean 오브젝트](https://www.notion.so/2021-06-27-14-Boolean-e50872e2364e42188da7e55996dd0106)  
+[✏ 15강 자바스크립트 특징](https://www.notion.so/2021-06-28-15-e050f2cead994b8c8f0c6cb3d373d9bf)  
