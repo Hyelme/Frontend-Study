@@ -19,3 +19,5 @@
 [✏ 15강 자바스크립트 특징](https://www.notion.so/2021-06-28-15-e050f2cead994b8c8f0c6cb3d373d9bf)  
 [✏ 16강 Object 오브젝트(ES5)](https://www.notion.so/2021-06-28-16-Object-ES5-c7ba196b26e74467bef2812dd94e61f5)  
 [✏ 17강 JSON 오브젝트](https://www.notion.so/2021-06-28-17-JSON-8526851ba8324c239a174001b088a78d)  
+[✏ 18강 Date 오브젝트](https://www.notion.so/2021-06-29-18-Date-aac7dc4fdd40476383e11632d83279c3)  
+[✏ 19강 Math 오브젝트](https://www.notion.so/2021-06-29-19-Math-526693ecda1b45869d512be7e6458f28)  
